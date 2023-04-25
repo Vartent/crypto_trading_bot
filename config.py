@@ -1,0 +1,1 @@
+MONITOR_RANGE = 60

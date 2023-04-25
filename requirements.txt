@@ -1,0 +1,6 @@
+aiogram
+python-dotenv
+requests
+pandas-datareader
+yfinance
+aiohttp
