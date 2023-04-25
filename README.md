@@ -14,3 +14,5 @@ Log in colsole when the *BASIC PRICE* of **ETH/USDT** changes by more than 1%
 Fetching data from both https://binance.com/ and https://coinmarketcap.com/
 
 *soon to add telegram bot for more flexible functionality*
+    
+**installation:** pip install -r requirements.txt 
