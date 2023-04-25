@@ -12,3 +12,5 @@ Next we subtract **BTC/USDT** with indluence correction from **ETH/USDT** percen
 Log in colsole when the *BASIC PRICE* of **ETH/USDT** changes by more than 1%
 
 Fetching data from both https://binance.com/ and https://coinmarketcap.com/
+
+*soon to add telegram bot for more flexible functionality*
