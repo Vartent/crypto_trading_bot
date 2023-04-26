@@ -1,6 +1,6 @@
 import asyncio
 import aiohttp
-
+import ssl
 
 async def fetch_data(url, headers):
     """
@@ -10,7 +10,13 @@ async def fetch_data(url, headers):
 
     creating ClientSession within with block to increase performance
     """
-    async with aiohttp.ClientSession() as session:
+    ssl_context = ssl.create_default_context()
+    ssl_context.check_hostname = False
+    ssl_context.verify_mode = ssl.CERT_NONE
+
+    async with aiohttp.ClientSession(
+            connector=aiohttp.TCPConnector(ssl_context=ssl_context)
+    ) as session:
         async with session.get(url, headers=headers) as response:
             if response.status == 200:
                 return await response.json()
